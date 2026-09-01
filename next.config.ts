@@ -1,23 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  },;
-  reactStrictMode: false,
-  async redirects() {
-    return [
-      // Redirect www to non-www (http)
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.marko-sarafijanovic.com',
-          },
-        ],
-        destination: 'https://marko-sarafijanovic.com/:path*',
-        permanent: true,
-      },
-    ];
+  images: {
+    // Add external image hostnames here if you need to use next/image
+    domains: [], 
+    // Note: 'remotePatterns' is preferred in newer Next.js versions:
+    // remotePatterns: [
+    //   {
+    //     protocol: 'https',
+    //     hostname: 'example.com',
+    //   },
+    // ],
   },
 };
 
