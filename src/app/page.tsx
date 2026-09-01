@@ -433,7 +433,7 @@ export default function Home() {
                   <interest.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
                 <h3 className="text-base md:text-lg font-bold text-slate-800 mb-1 md:mb-2">{interest.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed hidden md:block">{interest.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">{interest.description}</p>
               </motion.div>
             ))}
           </motion.div>
